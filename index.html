@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TW-Admin-Dashboard</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Tailwind CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen grid grid-cols-6 grid-rows-5 bg-gray-200 gap-y-2 text-white">
+    <nav class="row-span-5 col-span-1 bg-slate-800 grid grid-rows-5 content-between font-mono">
+        <!-- LOGO  -->
+        <div class="row-span-1 pl-4 flex justify-start items-center space-x-3">
+            <img src="images/logo.png" alt="logo-img">
+            <h1 class="font-extrabold text-xl">Dashboard</h1>
+        </div>
+        <!-- Nav List One  -->
+        <div class="pl-4 row-span-2 space-y-2">
+            <div class="flex hover:text-purple-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                </svg>
+                <p>Home</p>
+            </div>
+            <div class="flex hover:text-blue-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                </svg>
+                <p>Profile</p>
+            </div>
+            <div class="flex hover:text-yellow-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M20,20H7A2,2 0 0,1 5,18V8.94L2.23,5.64C2.09,5.47 2,5.24 2,5A1,1 0 0,1 3,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M8.5,7A0.5,0.5 0 0,0 8,7.5V8.5A0.5,0.5 0 0,0 8.5,9H18.5A0.5,0.5 0 0,0 19,8.5V7.5A0.5,0.5 0 0,0 18.5,7H8.5M8.5,11A0.5,0.5 0 0,0 8,11.5V12.5A0.5,0.5 0 0,0 8.5,13H18.5A0.5,0.5 0 0,0 19,12.5V11.5A0.5,0.5 0 0,0 18.5,11H8.5M8.5,15A0.5,0.5 0 0,0 8,15.5V16.5A0.5,0.5 0 0,0 8.5,17H13.5A0.5,0.5 0 0,0 14,16.5V15.5A0.5,0.5 0 0,0 13.5,15H8.5Z" />
+                </svg>
+                <p>Messages</p>
+            </div>
+            <div class="flex hover:text-red-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21 11.11V5C21 3.9 20.11 3 19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.11 3.9 21 5 21H11.11C12.37 22.24 14.09 23 16 23C19.87 23 23 19.87 23 16C23 14.09 22.24 12.37 21 11.11M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M6 7H18V9H6V7M9.08 17H6V15H9.08C9.03 15.33 9 15.66 9 16S9.03 16.67 9.08 17M6 13V11H11.11C10.5 11.57 10.04 12.25 9.68 13H6M16 21C13.24 21 11 18.76 11 16S13.24 11 16 11 21 13.24 21 16 18.76 21 16 21M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25Z" />
+                </svg>
+                <p>History</p>
+            </div>
+            <div class="flex hover:text-cyan-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z" />
+                </svg>
+                <p>Tasks</p>
+            </div>
+            <div class="flex hover:text-amber-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M15,12C13.89,12 13,12.89 13,14A2,2 0 0,0 15,16A2,2 0 0,0 17,14C17,12.89 16.1,12 15,12M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M14,9C14,7.89 13.1,7 12,7C10.89,7 10,7.89 10,9A2,2 0 0,0 12,11A2,2 0 0,0 14,9M9,12A2,2 0 0,0 7,14A2,2 0 0,0 9,16A2,2 0 0,0 11,14C11,12.89 10.1,12 9,12Z" />
+                </svg>
+                <p>Communities</p>
+            </div>
+        </div>
+        <!-- Nav List Two  -->
+        <div class="pl-4 row-span-2 space-y-2">
+            <div class="flex hover:text-lime-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                </svg>
+                <p>Settings</p>
+            </div>
+            <div class="flex hover:text-green-600 space-x-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z" />
+                </svg>
+                <p>Support</p>
+            </div>
+            <div class="flex hover:text-cyan-600 space-x-2">
+                <svg style="width:24px;height:24px" 8iewBox="slate 84">
+                    <path fill="currentColor" d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" />
+                </svg>
+                <p>Privacy</p>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Bar -->
+    <header class="col-span-5 row-span-1 bg-gray-700 p-4 grid grid-cols-2 grid-rows-2 gap-y-1 font-mono">
+        <form action="" class="row-span-1 col-span-1 flex justify-around space-x-1">
+            <label for="search-bar"><a href=""><svg style="width:36px;height:36px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </svg></a></label>
+            <input type="text" id="search-bar" class="bg-gray-200 rounded-lg w-4/5 h-8 flex-1 text-black">
+        </form>
+        <div class="row-span-1 col-span-1 flex justify-end items-center">
+            <svg style="width:36px;height:36px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
+            </svg>
+            <a href="" class="w-12 h-12 ml-6 mr-6"><img class="bg-gray-700 rounded-full" src="images/dog.png" alt=""></a>
+            <h3 class="font-bold">@rudolph</h3>
+        </div>
+        <div class="row-span-1 col-span-1 flex items-center">
+            <a href="" class="w-10 h-10 mr-6"><img class="bg-gray-700 rounded-full" src="images/dog.png" alt=""></a>
+            <div class="font-bold">
+                <p>Hi, there!</p>
+                <h1>Rudolph Barks (@rudolph)</h1>
+            </div>
+        </div>
+        <div class="row-span-1 col-span-1 flex justify-end items-center">
+            <button class="bg-sky-600 w-20 h-8 font-bold text-sm rounded-lg p-2">New</button>
+            <button class="bg-sky-600 w-20 h-8 font-bold text-sm rounded-lg p-2 ml-4 mr-4">Upload</button>
+            <button class="bg-sky-600 w-20 h-8 font-bold text-sm rounded-lg p-2">Share</button>
+        </div>
+    </header>
+    <!-- Main body  -->
+    <main class="col-span-5 row-span-4 grid grid-cols-5 gap-2">
+        <div class="p-4 col-span-4 bg-slate-600">
+            <h2 class="text-white ml-4 font-bold">Your Projects</h2>
+            <div class="grid grid-cols-3 gap-6 p-4">
+                <div class="space-y-1 bg-cyan-700 rounded-lg text-white flex flex-col justify-around p-3 border-l-8 border-slate-800">
+                    <h3 class="border-b-2 border-indigo-200 font-bold mb-2 font-mono">Project One</h3>
+                    <p>This is project one. This is project one. This is project one. 
+                        This is project one. This is project one. This is project one.
+                    </p>
+                    <div class="flex justify-end space-x-2 mt-1">
+                        <a href=""><img src="images/star-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/eye-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/source-fork.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="space-y-1 bg-cyan-700 rounded-lg text-white flex flex-col justify-around p-3 border-l-8 border-slate-800">
+                    <h3 class="border-b-2 border-indigo-200 font-bold mb-2 font-mono">Project One</h3>
+                    <p>This is project one. This is project one. This is project one. 
+                        This is project one. This is project one. This is project one.
+                    </p>
+                    <div class="flex justify-end space-x-2 mt-1">
+                        <a href=""><img src="images/star-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/eye-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/source-fork.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="space-y-1 bg-cyan-700 rounded-lg text-white flex flex-col justify-around p-3 border-l-8 border-slate-800">
+                    <h3 class="border-b-2 border-indigo-200 font-bold mb-2 font-mono">Project One</h3>
+                    <p>This is project one. This is project one. This is project one. 
+                        This is project one. This is project one. This is project one.
+                    </p>
+                    <div class="flex justify-end space-x-2 mt-1">
+                        <a href=""><img src="images/star-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/eye-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/source-fork.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="space-y-1 bg-cyan-700 rounded-lg text-white flex flex-col justify-around p-3 border-l-8 border-slate-800">
+                    <h3 class="border-b-2 border-indigo-200 font-bold mb-2 font-mono">Project One</h3>
+                    <p>This is project one. This is project one. This is project one. 
+                        This is project one. This is project one. This is project one.
+                    </p>
+                    <div class="flex justify-end space-x-2 mt-1">
+                        <a href=""><img src="images/star-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/eye-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/source-fork.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="space-y-1 bg-cyan-700 rounded-lg text-white flex flex-col justify-around p-3 border-l-8 border-slate-800">
+                    <h3 class="border-b-2 border-indigo-200 font-bold mb-2 font-mono">Project One</h3>
+                    <p>This is project one. This is project one. This is project one. 
+                        This is project one. This is project one. This is project one.
+                    </p>
+                    <div class="flex justify-end space-x-2 mt-1">
+                        <a href=""><img src="images/star-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/eye-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/source-fork.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="space-y-1 bg-cyan-700 rounded-lg text-white flex flex-col justify-around p-3 border-l-8 border-slate-800">
+                    <h3 class="border-b-2 border-indigo-200 font-bold mb-2 font-mono">Project One</h3>
+                    <p>This is project one. This is project one. This is project one. 
+                        This is project one. This is project one. This is project one.
+                    </p>
+                    <div class="flex justify-end space-x-2 mt-1">
+                        <a href=""><img src="images/star-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/eye-plus-outline.png" alt=""></a>
+                        <a href=""><img src="images/source-fork.png" alt=""></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="p-4 col-span-1 bg-slate-500 space-y-2">
+            <h2 class="text-white font-bold">Articles</h2>
+            <div class="bg-cyan-700 p-3 mt-4 rounded-lg">
+                <div class="text-white text-xs border-b-2 border-indigo-200 space-y-1 mb-1">
+                    <p class="font-bold font-mono">Site Maintenance</p>
+                    <p class="text-[10px]">
+                        It is a long established fact that a reader will 
+                        be distracted by the readable content of a page.
+                    </p>
+                </div>
+                <div class="text-white text-xs border-b-2 border-indigo-200 space-y-1 mb-1">
+                    <p class="font-bold font-mono">Community Share Day</p>
+                    <p class="text-[10px]">
+                        It is a long established fact that a reader will 
+                        be distracted by the readable content of a page.
+                    </p>
+                </div>
+                <div class="text-white text-xs border-b-2 border-indigo-200 space-y-1 mb-1">
+                    <p class="font-bold font-mono">Updated Privacy Policy</p>
+                    <p class="text-[10px]">
+                        It is a long established fact that a reader will 
+                        be distracted by the readable content of a page.
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="text-white font-bold">Trending...</h2>
+            <div class="bg-cyan-700 p-3 mt-4 rounded-lg space-y-2">
+                <div class="flex justify-slate border-b-2 border-indigo-200">
+                    <a href=""><img class="bg-yellow-400 rounded-full w-10 h-10" src="images/cat.png" alt=""></a>
+                    <div class="text-xs space-y-1 pb-2">
+                        <p class="font-bold">@theUnicat</p>
+                        <p>Sparkles and stars</p>
+                    </div>
+                </div>
+                <div class="flex justify-around border-b-2 border-indigo-200">
+                    <a href=""><img class="bg-gray-700 rounded-full w-10 h-10" src="images/dog.png" alt=""></a>
+                    <div class="text-xs space-y-1 pb-2">
+                        <p class="font-bold">@rudolph</p>
+                        <p>it's the mailman</p>
+                    </div>
+                </div>
+                <div class="flex justify-around border-b-2 border-indigo-200">
+                    <a href=""><img class="bg-gray-200 rounded-full w-10 h-10" src="images/kitty.png" alt=""></a>
+                    <div class="text-xs space-y-1 pb-2">
+                        <p class="font-bold">@superKitty</p>
+                        <p>up up and away!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
